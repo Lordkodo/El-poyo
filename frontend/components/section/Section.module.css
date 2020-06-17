@@ -1,0 +1,21 @@
+.content {
+    height: 100vh;
+    position: relative;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    overflow: hidden;;
+
+}
+
+.content > * {
+    flex: 1;
+}
+
+.content > h2 {
+
+}

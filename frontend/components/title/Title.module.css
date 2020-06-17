@@ -1,0 +1,26 @@
+.splash {
+    background-color: #ffeead;
+
+    font-family: 'Fascinate Inline', cursive;
+    z-index: -1;
+}
+
+.content {
+    display: inline-block;
+    position: relative;
+    margin-top: 25vh;
+}
+
+.text {
+    z-index: 2;
+    display: inline;
+    font-size: 72px;
+    color: #ff6f69;
+}
+.image {
+    width: 85px;
+    position: absolute;
+    top: 0;
+    right: -55px;
+    z-index: -1;
+}

@@ -1,0 +1,19 @@
+version: '2.2'
+services:
+    frontend:
+        build:
+            context: .
+            dockerfile: frontend/Dockerfile
+        container_name: el_poyo-frontend
+        volumes:
+            - ./frontend:/home/node/app
+        restart: always
+        command: npm run dev
+        ports:
+            - "3000:3000"
+        networks:
+            - internal
+
+networks:
+    internal:
+        driver: bridge
