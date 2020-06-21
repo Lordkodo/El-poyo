@@ -4,8 +4,10 @@ function Letter(props) {
     return (
         <div className={styles.letter}>
             <div className={styles.content}>
-                <textarea>
-                    It was a dark and stormy night...
+                <textarea
+                    className={styles.text}
+                    defaultValue='It was a dark and stormy night...'
+                >
                 </textarea>
                 <button type='submit'>
                     Send

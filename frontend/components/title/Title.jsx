@@ -1,4 +1,5 @@
 import Waves from '../waves/Waves.jsx';
+import Footprints from '../footprints/Footprints.jsx';
 import Section from '../section/Section.jsx';
 
 import styles from './Title.module.css';
@@ -16,6 +17,7 @@ function Title() {
                     />
                 </div>
                 <Waves />
+                <Footprints />
             </div>
         </Section>
     )
