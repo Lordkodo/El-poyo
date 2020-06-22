@@ -5,8 +5,8 @@ import Portfolio from '../components/portfolio/Portfolio.jsx';
 import Letter from '../components/letter/Letter.jsx';
 import Me from '../components/me/Me.jsx';
 
-import styles from './Home.less';
 import reset from './reset.less';
+import styles from './Home.less';
 
 export default function Home() {
     return (
@@ -41,14 +41,7 @@ export default function Home() {
                         <h2>Contact</h2>
                         <Letter />
                     </div>
-
-
-
                 </main>
-
-                <footer>
-                    Footer
-                </footer>
             </div>
         </div>
     )
