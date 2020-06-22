@@ -1,4 +1,4 @@
-import styles from './Portfolio.module.css'
+import styles from './Portfolio.less'
 
 function Portfolio(props) {
     return (

@@ -5,75 +5,51 @@ import Portfolio from '../components/portfolio/Portfolio.jsx';
 import Letter from '../components/letter/Letter.jsx';
 import Me from '../components/me/Me.jsx';
 
+import styles from './Home.less';
+import reset from './reset.less';
+
 export default function Home() {
     return (
-        <div className="container">
-        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet"></link>
-            <Head>
-                <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+        <div className={reset}>
+            <div className={styles.container}>
+            <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet"></link>
+                <Head>
+                    <title>Create Next App</title>
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
 
-            <main>
-                <Title />
+                <main>
+                    <Title />
 
-                <div className='parallaxe'>
-                    <Parallax />
-                </div>
+                    <div className={styles.parallaxe}>
+                        <Parallax />
+                    </div>
 
-                <div className='about'>
-                <h2>About Me</h2>
-                    <Me />
-                </div>
-
-
-
-                <div className='portfolio'>
-                    <h2>Portfolio</h2>
-                    <Portfolio />
-                </div>
-
-                <div className='contact'>
-                    <h2>Contact</h2>
-                    <Letter />
-                </div>
+                    <div className={styles.about}>
+                    <h2>About Me</h2>
+                        <Me />
+                    </div>
 
 
 
-            </main>
+                    <div className={styles.portfolio}>
+                        <h2>Portfolio</h2>
+                        <Portfolio />
+                    </div>
 
-            <footer>
-                Footer
-            </footer>
+                    <div className={styles.contact}>
+                        <h2>Contact</h2>
+                        <Letter />
+                    </div>
 
-            <style jsx>{`
-                .container {
-                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-                    margin: 0;
-                    padding: 0;
-                    text-align: center;
-                }
-                h2 {
-                    font-family: 'Fascinate Inline', cursive;
-                    font-size: 52px;
-                    margin: 16px auto;
-                }
-                .about {
-                    background-color: #96ceb4;
-                    padding: 16px 0;
-                }
-                .parallaxe {
-                }
-                .portfolio {
-                    background-color: #ff6f69;
-                    padding: 16px 0;
-                }
-                .contact {
-                    background-color: #ffcc5c;
-                    padding: 16px 0;
-                }
-            `}</style>
+
+                </main>
+
+                <footer>
+                    Footer
+                </footer>
+            </div>
         </div>
     )
 }

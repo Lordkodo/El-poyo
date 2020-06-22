@@ -1,4 +1,4 @@
-import styles from './Vignette.module.css'
+import styles from './Vignette.less'
 
 function Vignette(props) {
     return (

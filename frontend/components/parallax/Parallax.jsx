@@ -1,4 +1,4 @@
-import styles from './Parallax.module.css'
+import styles from './Parallax.less'
 
 function Parallax(props) {
     return (

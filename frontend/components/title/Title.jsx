@@ -2,7 +2,7 @@ import Waves from '../waves/Waves.jsx';
 import Footprints from '../footprints/Footprints.jsx';
 import Section from '../section/Section.jsx';
 
-import styles from './Title.module.css';
+import styles from './Title.less';
 
 function Title() {
     return (
@@ -13,7 +13,7 @@ function Title() {
                     <img
                         className={styles.image}
                         alt='icecream'
-                        src='/icecream.png'
+                        src='/assets/images/icecream.png'
                     />
                 </div>
                 <Waves />

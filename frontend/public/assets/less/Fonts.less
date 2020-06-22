@@ -1,0 +1,23 @@
+@Regular-family-stack: 'Lato', Helvetica, Arial, sans-serif;
+@Title-family-stack: 'Fascinate Inline', @Regular-family-stack;
+
+@font-regular: 400;
+@font-bold: 700;
+@font-heavy: 900;
+
+.font-content(@font-weight: @font-regular, @font-size: 14px, @color: #000, @letter-spacing: 0) {
+    font-family: @Regular-family-stack;
+    font-weight: @font-weight;
+    font-size: @font-size;
+    color: @color;
+    letter-spacing: @letter-spacing;
+}
+
+.font-title(@font-weight: @font-regular, @font-size: 38px, @color: #000, @letter-spacing: 0) {
+    font-family: @Title-family-stack;
+    font-weight: @font-weight;
+    font-size: @font-size;
+    color: @color;
+    letter-spacing: @letter-spacing;
+}
+

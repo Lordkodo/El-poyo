@@ -1,0 +1,50 @@
+
+.swell-animation(@duration: 21s) {
+    animation: swell @duration ease-in-out -2.5s infinite;
+}
+
+.wave-animation() {
+    animation: wave 40s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.turn-animation() {
+    animation: turn 40s ease infinite;
+}
+
+.fadeOut-animation() {
+    animation-duration: 7s;
+    animation-name: fadeOut;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+      transform: translate3d(0, 0px,0);
+    }
+    50% {
+      transform: translate3d(0, 100px,0);
+    }
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    0%{opacity: 1;}
+    80%{opacity: 0.8;}
+    100%{opacity: 0;}
+}

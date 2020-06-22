@@ -1,21 +1,26 @@
-import styles from './Letter.module.css'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-function Letter(props) {
-    return (
-        <div className={styles.letter}>
-            <div className={styles.content}>
-                <textarea
-                    className={styles.text}
-                    defaultValue='It was a dark and stormy night...'
-                >
-                </textarea>
-                <button type='submit'>
-                    Send
-                </button>
+import styles from "./Letter.less"
 
+class Letter extends Component {
+    render() {
+        return (
+            <div className={styles.letter}>
+                <div className={styles.content}>
+                    <textarea
+                        className={styles.text}
+                        defaultValue='It was a dark and stormy night...'
+                    >
+                    </textarea>
+                    <button type='submit'>
+                        Send
+                    </button>
+
+                </div>
             </div>
-        </div>
-    )
+        );
+    }
 }
 
-export default Letter
+export default Letter;

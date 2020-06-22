@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Footprints.module.css'
+import styles from './Footprints.less'
 
 class Footprints extends Component {
     state = {
@@ -22,8 +22,8 @@ class Footprints extends Component {
 
     walk = () => {
         const loop = [-40, -95, -140, -175, -222, -273, -319, -360]
-        let NavWidth = 1000;
-		let NavHeight = 450;
+        let NavWidth = this.container.clientWidth;
+		let NavHeight = this.container.clientHeight;
 
         const { foots, count } = this.state;
         const previous = foots.length > 0 ? foots[foots.length - 1] : { x: 0, y: NavHeight, rotation: 0 };
@@ -63,14 +63,18 @@ class Footprints extends Component {
         const { foots } = this.state;
 
         return (
-            <div className={styles.footprints}>
+            <div
+                className={styles.footprints}
+                ref={(container) => this.container = container}
+            >
                 {
                     foots.map((foot, i) => {
                         const scale = (i % 2) === 0 ? -1 : 1;
                         return (
                             <img
                                 key={i}
-                                src='/footprint.svg'
+                                alt='step'
+                                src='/assets/images/footprint.svg'
                                 style={{
                                     transform: `rotate(${foot.rotation}deg) scaleX(${scale})  `,
                                     position: 'absolute',

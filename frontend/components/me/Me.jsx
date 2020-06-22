@@ -1,7 +1,7 @@
 import Section from '../section/Section.jsx';
 import Vignette from '../vignette/Vignette.jsx';
 
-import styles from './Me.module.css'
+import styles from './Me.less'
 
 function Me(props) {
     return (

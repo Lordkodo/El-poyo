@@ -1,0 +1,66 @@
+@import '../../public/assets/less/Palette.less';
+@import '../../public/assets/less/Animations.less';
+
+.landscape {
+    position: absolute;
+    bottom: -7px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ocean {
+    height: 205px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave {
+    background: url(/assets/images/wave.svg) repeat-x;
+    position: absolute;
+    bottom: 200px;
+    left: -350px;
+    width: 3600px;
+    height: 200px;
+
+    .swell-animation(15s);
+
+    transform: translate3d(0, 0, 0);
+
+    &:nth-of-type(2) {
+        top: -175px;
+        left: -175px;
+        .swell-animation(26s);
+
+    }
+
+    &:nth-of-type(3) {
+        top: -145px;
+        left: -955px;
+        .swell-animation();
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: @sea;
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        bottom: -145px;
+        opacity: 1;
+    }
+}
+
+
+
+.bottom {
+    width: 100%;
+    height: 50px;
+    background-color: @sea;
+    position: absolute;
+    bottom: 0;
+}

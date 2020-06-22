@@ -1,8 +1,11 @@
-.splash {
-    background-color: #ffeead;
+@import '../../public/assets/less/Palette.less';
+@import '../../public/assets/less/Fonts.less';
 
-    font-family: 'Fascinate Inline', cursive;
+.splash {
+    .font-title(@color: @red);
     z-index: -1;
+
+    background-color: @sand;
 }
 
 .content {
@@ -14,8 +17,6 @@
 .text {
     z-index: 2;
     display: inline;
-    font-size: 72px;
-    color: #ff6f69;
 }
 .image {
     width: 85px;

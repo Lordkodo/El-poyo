@@ -1,4 +1,4 @@
-import styles from './Waves.module.css'
+import styles from './Waves.less'
 
 function Waves(props) {
     return (
