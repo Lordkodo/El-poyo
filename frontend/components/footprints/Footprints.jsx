@@ -23,7 +23,7 @@ class Footprints extends Component {
     walk = () => {
         const loop = [-40, -95, -140, -175, -222, -273, -319, -360]
         let NavWidth = this.container.clientWidth;
-		let NavHeight = this.container.clientHeight;
+		let NavHeight = 400; // this.container.clientHeight;
 
         const { foots, count } = this.state;
         const previous = foots.length > 0 ? foots[foots.length - 1] : { x: 0, y: NavHeight, rotation: 0 };
