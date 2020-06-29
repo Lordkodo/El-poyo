@@ -7,16 +7,55 @@ function Me(props) {
     return (
         <Section>
             <div className={styles.content}>
-                <div>
-                    <p>Paul Mabillot</p>
-                    <p>Lead dev and fullstack developer</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div className={styles.me}>
+                    <div>
+                        <div>
+                            <h3>Hi, I'm Paul Mabillot</h3>
+
+                            <p>
+                                I've been a <i>FullStack</i> developer for four years and also a <i>Tech Lead</i> since a couple years.<br/>
+                                I like to work in human sized company. Where every idea can be hear and take into account.
+                            </p>
+
+
+                            <p>
+                                I'm happy to work with existing team, learning and sharing knowledge and ideas with people and helping to build a project together.<br/>
+                                I also like to start a project from scratch and creating a first stable and evolutive version of your idea.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>What can I do for you?</h3>
+                            <p>
+                                As a FullStack my fields of expertise is exended. I can do:
+                            </p>
+                            <ul>
+                                <li>- Frontend: Make you project beautiful and easy to use</li>
+                                <li>- Backend: To make you product quick and robust</li>
+                                <li>- CICD: Integrate it in a process of automatitation for test, build and deployment</li>
+                            </ul>
+
+
+                            <p>
+                                As a Tech Lead:
+                            </p>
+                            <ul>
+                                <li>- Team management and growing.</li>
+                                <li>- Work directly with the Product Owner for roadmap preparation</li>
+                                <li>- Bring technical expertise.</li>
+                                <li>- Take responsibility for project management and features development.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
 
-                <Vignette
-                    src={'/parasol.png'}
-                    alt={'Parasol'}
-                />
+                <div>
+                    <Vignette
+                        src={'/parasol.png'}
+                        alt={'Parasol'}
+                    />
+                </div>
             </div>
         </Section>
     )

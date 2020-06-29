@@ -1,10 +1,41 @@
 .content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
+
+    margin: 0 16px;
 
     & > * {
         flex: 1;
-        overflow: hidden;
+    }
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin: auto;
+
+    h3 {
+        padding: 16px auto;
+    }
+    p {
+        padding-top: 8px;
+    }
+
+    & > div {
+        max-width: 550px;
+        margin: auto;
+
+        text-align: justify;
+        line-height: 1.2;
+
+        & > div {
+            margin-bottom: 48px;
+        }
+        & > div:last-child {
+            margin-bottom: 0;
+        }
     }
 }

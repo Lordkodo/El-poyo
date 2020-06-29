@@ -2,29 +2,6 @@
 .swell-animation(@duration: 21s) {
     animation: swell @duration ease-in-out -2.5s infinite;
 }
-
-.wave-animation() {
-    animation: wave 40s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-}
-
-.turn-animation() {
-    animation: turn 40s ease infinite;
-}
-
-.fadeOut-animation() {
-    animation-duration: 7s;
-    animation-name: fadeOut;
-}
-
-@keyframes wave {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: -1600px;
-    }
-}
-
 @keyframes swell {
     0%, 100% {
       transform: translate3d(0, 0px,0);
@@ -34,6 +11,21 @@
     }
 }
 
+.wave-animation() {
+    animation: wave 40s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+}
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+.turn-animation() {
+    animation: turn 40s ease infinite;
+}
 @keyframes turn {
     0% {
         transform: rotate(0deg);
@@ -43,8 +35,50 @@
     }
 }
 
+.fadeOut-animation() {
+    animation-duration: 7s;
+    animation-name: fadeOut;
+}
 @keyframes fadeOut {
     0%{opacity: 1;}
     80%{opacity: 0.8;}
     100%{opacity: 0;}
+}
+
+.stamp-animation(@duration: 0.5s) {
+    animation-duration: @duration;
+    animation-fill-mode: forwards;
+    animation-name: stamp;
+    // animation-delay: 2.5s;
+}
+@keyframes stamp {
+    0%{
+        opacity: 0;
+        transform: scale(5);
+    }
+    10%{
+        opacity: .50;
+        transform-origin: 50% 50%;
+        transform: scale(5);
+        transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+.slide-animation(@side: top, @direction: forwards) {
+    @{side}: -300px;
+
+    animation: slide 0.5s @direction;
+    animation-delay: 0;
+}
+@keyframes slide {
+    100% {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }

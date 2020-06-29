@@ -1,4 +1,5 @@
 @Regular-family-stack: 'Lato', Helvetica, Arial, sans-serif;
+@Curly-family-stack: 'Pangolin', cursive, sans-serif;
 @Title-family-stack: 'Fascinate Inline', @Regular-family-stack;
 
 @font-regular: 400;
@@ -21,3 +22,10 @@
     letter-spacing: @letter-spacing;
 }
 
+.font-curly(@font-weight: @font-regular, @font-size: 18px, @color: #000, @letter-spacing: 0) {
+    font-family: @Curly-family-stack;
+    font-weight: @font-weight;
+    font-size: @font-size;
+    color: @color;
+    letter-spacing: @letter-spacing;
+}

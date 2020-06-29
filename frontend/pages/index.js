@@ -9,12 +9,16 @@ import reset from './reset.less';
 import styles from './Home.less';
 
 export default function Home() {
+    // should get this info from somewhere
+    const isBusy = false;
+
     return (
         <div className={reset}>
             <div className={styles.container}>
-            <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Pangolin&display=swap" rel="stylesheet"></link>
+
                 <Head>
-                    <title>Create Next App</title>
+                    <title>Paul Mabillot</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
@@ -26,19 +30,27 @@ export default function Home() {
                     </div>
 
                     <div className={styles.about}>
-                    <h2>About Me</h2>
+                        <h2>About Me</h2>
                         <Me />
                     </div>
 
 
 
                     <div className={styles.portfolio}>
-                        <h2>Portfolio</h2>
+                        <h2>Previous Works</h2>
                         <Portfolio />
                     </div>
 
                     <div className={styles.contact}>
-                        <h2>Contact</h2>
+                        <h2>Get in touch</h2>
+                        <p>
+                        {
+                            isBusy ?
+                                'I\'m currently busy, but reach me so we can discuss for later'
+                                : 'If you have great idea or project and you are looking for someone to get it done, don\'t hesitate to send me an email or reach me from linkedin.'
+                        }
+                        </p>
+
                         <Letter />
                     </div>
                 </main>

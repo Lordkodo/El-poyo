@@ -21,13 +21,24 @@ class Letter extends Component {
                             <p>France</p>
                         </div>
 
-                        <a
-                            href='https://www.linkedin.com/in/paul-mabillot-a4486790/'
-                            rel='noreferrer noopener'
-                            target='_blank'
-                        >
-                            <span className={styles.stamp} />
-                        </a>
+
+                        <span className={styles.stamp}/>
+                        <span className={styles.circle}/>
+
+                        <div className={styles.social}>
+                            <a
+                                href='https://github.com/Lordkodo'
+                                rel='noreferrer noopener'
+                                target='_blank'
+                                className={styles.github}
+                            />
+                            <a
+                                href='https://www.linkedin.com/in/paul-mabillot-a4486790/'
+                                rel='noreferrer noopener'
+                                target='_blank'
+                                className={styles.linkedin}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
