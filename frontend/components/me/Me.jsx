@@ -14,9 +14,8 @@ function Me(props) {
 
                             <p>
                                 I've been a <i>FullStack</i> developer for four years and also a <i>Tech Lead</i> since a couple years.<br/>
-                                I like to work in human sized company. Where every idea can be hear and take into account.
+                                I like to work in human sized company, where every ideas can be hear and take into account.
                             </p>
-
 
                             <p>
                                 I'm happy to work with existing team, learning and sharing knowledge and ideas with people and helping to build a project together.<br/>
@@ -40,10 +39,10 @@ function Me(props) {
                                 As a Tech Lead:
                             </p>
                             <ul>
-                                <li>- Team management and growing.</li>
-                                <li>- Work directly with the Product Owner for roadmap preparation</li>
-                                <li>- Bring technical expertise.</li>
-                                <li>- Take responsibility for project management and features development.</li>
+                                <li>- team management and growing</li>
+                                <li>- work directly with the Product Owner for roadmap preparation</li>
+                                <li>- bring technical expertise.</li>
+                                <li>- take responsibility for project management and features development.</li>
                             </ul>
                         </div>
                     </div>
@@ -52,8 +51,8 @@ function Me(props) {
 
                 <div>
                     <Vignette
-                        src={'/parasol.png'}
-                        alt={'Parasol'}
+                        src={'/me.jpeg'}
+                        alt={'Paul Mabillot'}
                     />
                 </div>
             </div>

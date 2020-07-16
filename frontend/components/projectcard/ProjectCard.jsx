@@ -11,34 +11,6 @@ class ProjectCard extends Component {
         tags: PropTypes.arrayOf(PropTypes.string),
     }
 
-    state = {
-        side: null,
-    }
-
-    onMouseEnter = event => {
-        let side = null;
-        const MARGE = 40;
-        const { x, y, width, height } = event.target.getBoundingClientRect();
-
-        if (x - MARGE <= event.clientX && event.clientX <= x + MARGE) {
-            console.log('LEFT');
-            side = 'left';
-        } else if (x + width - MARGE <= event.clientX && event.clientX <= x + width + MARGE) {
-            console.log('RIGHT');
-            side = 'right';
-        } else if (y - MARGE <= event.clientY && event.clientY <= y + MARGE) {
-            console.log('UP');
-            side = 'up';
-        } else if (y + height - MARGE <= event.clientY && event.clientY <= y + height + MARGE) {
-            console.log('DOWn');
-            side = 'down';
-        }
-
-        this.setState({
-            side,
-        });
-    }
-
     render() {
         const {
             name,
@@ -46,20 +18,20 @@ class ProjectCard extends Component {
             image,
             description,
         } = this.props;
-        const { side } = this.state;
-
-        const cx = side ? `${side}-mod`: '';
 
         return (
-            <div
-                className={styles.project}
-                onMouseEnter={this.onMouseEnter}
-            >
+            <div className={styles.project}>
                 <div>
+                    <span
+                        className={styles.bg}
+                        style={{
+                            background: `url(${image}) no-repeat center / cover`,
+                        }}
+                    />
                     <p>{name}</p>
                     <p>{description}</p>
                 </div>
-                <div className={`${styles.hovered} ${styles[cx]} `}>
+                <div className={styles.hovered}>
                     {
                         tags.map((tag, i) => <p key={i}>{tag}</p>)
                     }

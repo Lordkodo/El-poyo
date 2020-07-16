@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className={reset}>
             <div className={styles.container}>
-            <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Pangolin&display=swap" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Raleway&display=swap" rel="stylesheet"></link>
 
                 <Head>
                     <title>Paul Mabillot</title>
@@ -30,16 +30,18 @@ export default function Home() {
                     </div>
 
                     <div className={styles.about}>
-                        <h2>About Me</h2>
+                        <h2>Get shit done!</h2>
                         <Me />
                     </div>
 
 
 
-                    <div className={styles.portfolio}>
-                        <h2>Previous Works</h2>
-                        <Portfolio />
-                    </div>
+                    {/*
+                        <div className={styles.portfolio}>
+                            <h2>Previous Works</h2>
+                            <Portfolio />
+                        </div>
+                    */}
 
                     <div className={styles.contact}>
                         <h2>Get in touch</h2>

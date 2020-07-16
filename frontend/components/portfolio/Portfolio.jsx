@@ -23,7 +23,7 @@ class Portfolio extends Component {
             {
                 name: 'Test',
                 description: 'This is the description',
-                image: '',
+                image: '/assets/images/owkin.jpg',
                 tags: ['FullStack', 'Google Cloud Platform', 'Java'],
             },
             {

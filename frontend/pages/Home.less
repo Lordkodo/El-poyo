@@ -1,6 +1,8 @@
 @import '../public/assets/less/Fonts.less';
 @import '../public/assets/less/Palette.less';
 
+@PADDING: 32px;
+
 .container {
     // .font-content();
     .font-curly();
@@ -18,18 +20,19 @@ p {
     margin: 16px auto 32px;
 }
 .about {
-    background-color: @sky;
-    padding: 16px 0;
+    background-color: @red;
+
+    padding: @PADDING 0;
 }
 .parallaxe {
 }
 .portfolio {
-    background-color: @red;
-    padding: 16px 0;
+    background-color: @sky;
+    padding: @PADDING 0;
 }
 .contact {
     background-color: @sun;
-    padding: 16px 0;
+    padding: @PADDING 0;
 }
 
 body {
